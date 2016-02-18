@@ -92,7 +92,7 @@ public class TestDelegate: MonoBehaviour
         state = new LuaState();
         state.Start();
         LuaBinder.Bind(state);
-        Bind(state);
+        //Bind(state);
 
         state.LogGC = true;
         state.DoString(script);

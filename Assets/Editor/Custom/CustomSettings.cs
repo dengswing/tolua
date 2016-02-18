@@ -33,15 +33,15 @@ public static class CustomSettings
         _DT(typeof(Action<GameObject>)),
         _DT(typeof(UnityEngine.Events.UnityAction)),       
         
-        _DT(typeof(TestEventListener.OnClick)),
-        _DT(typeof(TestEventListener.VoidDelegate)),
+       // _DT(typeof(TestEventListener.OnClick)),
+       // _DT(typeof(TestEventListener.VoidDelegate)),
     };
 
     //在这里添加你要导出注册到lua的类型列表
     public static BindType[] customTypeList = 
     {                
         //------------------------为例子导出--------------------------------
-        //_GT(typeof(TestEventListener)),                
+        _GT(typeof(TestEventListener)),                
         //_GT(typeof(TestAccount)),
         //_GT(typeof(Dictionary<int, TestAccount>)).SetLibName("AccountMap"),                
         //_GT(typeof(KeyValuePair<int, TestAccount>)),    
